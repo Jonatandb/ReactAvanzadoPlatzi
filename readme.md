@@ -1,16 +1,27 @@
-### FrontEnd Online:
+## FrontEnd Online:
 
 - [https://petgram.jonatandb.now.sh/](https://petgram.jonatandb.now.sh/)
 
-### API Online:
+## API Online:
 
 - [https://petgram-api-jonatandb.now.sh/](https://petgram-api-jonatandb.now.sh/)
 
-### Ejecución en desarrollo local:
+### Deploy a Vercel del front:
+
+        vercel
+
+### Deploy a Vercel de la api:
+
+        cd api
+        vercel
+
+### Ejecución del front en desarrollo local:
 
         npm run dev
 
-### Páginas investigadas:
+---
+
+## Páginas investigadas:
 
 How can I stop webpack dev server from windows console?
 
