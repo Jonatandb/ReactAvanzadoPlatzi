@@ -23,6 +23,10 @@
 
 ## Páginas investigadas:
 
+Styled-components
+
+- https://styled-components.com/
+
 How can I stop webpack dev server from windows console?
 
 - https://stackoverflow.com/questions/36921612/how-can-i-stop-webpack-dev-server-from-windows-console
