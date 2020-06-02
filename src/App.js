@@ -1,11 +1,13 @@
 import React from "react";
-import { Category } from "./components/Category";
+import ListOfCategories from "./components/ListOfCategories";
+import { GlobalStyle } from "./GlobalStyle";
 
 export default function App() {
   return (
     <>
+      <GlobalStyle />
       <h1>Petgram - Jonatandb</h1>
-      <Category path="/" />
+      <ListOfCategories />
     </>
   );
 }
