@@ -23,6 +23,10 @@
 
 ## Páginas investigadas:
 
+React Hooks, saca todo el potencial a tus componentes sin usar clases (midudev)
+
+- https://www.youtube.com/watch?v=Ww_eT4H_k2c
+
 SVGR - SVG to React Component
 
 - https://react-svgr.com/playground/
