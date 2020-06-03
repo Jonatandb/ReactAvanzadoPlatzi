@@ -23,6 +23,18 @@
 
 ## Páginas investigadas:
 
+SVGR - SVG to React Component
+
+- https://react-svgr.com/playground/
+
+SVGOMG - SVG Optimizer
+
+- https://jakearchibald.github.io/svgomg/
+
+Maketext.io - Logo creator
+
+- https://maketext.io/
+
 Styled-components
 
 - https://styled-components.com/

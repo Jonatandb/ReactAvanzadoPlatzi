@@ -2,7 +2,7 @@ import React from "react";
 import { ImgWrapper, Img, Button } from "./styles";
 import { MdFavoriteBorder } from "react-icons/md";
 const DEFAULT_IMAGE =
-  "https://res.cloudinary.com/midudev/image/upload/w_150/v1555671700/category_birds.jpg";
+  "https://images.unsplash.com/photo-1553987882-91d92995e16c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60";
 
 export const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
   return (
