@@ -23,6 +23,14 @@
 
 ## Páginas investigadas:
 
+"Can I use" (up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers)
+
+- https://caniuse.com/#search=intersection%20observer
+
+IntersectionObserver polyfill
+
+- https://github.com/w3c/IntersectionObserver/tree/master/polyfill
+
 React Hooks, saca todo el potencial a tus componentes sin usar clases (midudev)
 
 - https://www.youtube.com/watch?v=Ww_eT4H_k2c
