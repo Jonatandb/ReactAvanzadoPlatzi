@@ -3,7 +3,7 @@ import PhotoCard from "../components/PhotoCard";
 import { Query } from "react-apollo";
 import { gql } from "apollo-boost";
 
-const query = gql`
+const GET_SINGLE_PHOTO = gql`
   query getSinglePhoto($id: ID!) {
     photo(id: $id) {
       id
@@ -16,17 +16,17 @@ const query = gql`
   }
 `;
 
+const renderProp = ({ loading, error, data }) => {
+  if (loading) return <h5>Cargando foto... 📷</h5>;
+  if (error) return <h5>Se produjo un error 😢</h5>;
+  return <PhotoCard {...data.photo} />;
+};
+
 const PhotoCardWithQuery = ({ id }) => {
   console.log("id:", id);
   return (
-    <Query query={query} variables={{ id }}>
-      {({ loading, error, data }) => {
-        return loading ? (
-          <h5>Cargando foto... 📷</h5>
-        ) : (
-          <PhotoCard {...data.photo} />
-        );
-      }}
+    <Query query={GET_SINGLE_PHOTO} variables={{ id }}>
+      {renderProp}
     </Query>
   );
 };
