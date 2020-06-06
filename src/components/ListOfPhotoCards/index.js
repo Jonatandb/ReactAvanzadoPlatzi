@@ -5,7 +5,7 @@ const ListOfPhotoCardsComponent = ({
   data: { photos = [], loading = true },
 } = {}) => {
   return loading ? (
-    <h3>Cargando fotos...</h3>
+    <h5>Cargando fotos... 📷</h5>
   ) : (
     <ul>
       {photos.map((photo) => (
