@@ -1,8 +1,9 @@
 import React from "react";
-import ListOfCategories from "./components/ListOfCategories";
 import { GlobalStyle } from "./styles/GlobalStyles";
-import { ListOfPhotoCards } from "./components/ListOfPhotoCards";
-import { Logo } from "./components/Logo";
+
+import Logo from "./components/Logo";
+import ListOfCategories from "./components/ListOfCategories";
+import ListOfPhotoCards from "./containers/ListOfPhotoCards";
 
 export default function App() {
   return (
@@ -10,7 +11,7 @@ export default function App() {
       <GlobalStyle />
       <Logo />
       <ListOfCategories />
-      <ListOfPhotoCards />
+      <ListOfPhotoCards categoryId={3} />
     </>
   );
 }

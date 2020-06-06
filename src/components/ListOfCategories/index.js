@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Category } from "../Category";
+import Category from "../Category";
 import { List, Item } from "./styles";
 
 function useCategoriesData() {
