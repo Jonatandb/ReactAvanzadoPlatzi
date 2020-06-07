@@ -7,7 +7,7 @@ const ListOfPhotoCardsComponent = ({
   return loading ? (
     <h5>Cargando fotos... 📷</h5>
   ) : (
-    <ul>
+    <ul style={{ marginTop: "2px" }}>
       {photos.map((photo) => (
         <li key={photo.id}>
           <PhotoCard {...photo} />
