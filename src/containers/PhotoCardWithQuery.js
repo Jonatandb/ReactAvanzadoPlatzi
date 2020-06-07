@@ -23,7 +23,6 @@ const renderProp = ({ loading, error, data }) => {
 };
 
 const PhotoCardWithQuery = ({ id }) => {
-  console.log("id:", id);
   return (
     <Query query={GET_SINGLE_PHOTO} variables={{ id }}>
       {renderProp}

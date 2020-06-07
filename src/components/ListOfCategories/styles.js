@@ -23,7 +23,7 @@ export const List = styled.ul`
         transform: scale(0.5);
         z-index: 1;
       }
-    `}
+    `};
 `;
 
 export const Item = styled.li`
