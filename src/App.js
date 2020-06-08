@@ -12,9 +12,7 @@ import { NotRegisterUser } from "./pages/NotRegisterUser";
 
 import { NavBar } from "./components/NavBar";
 
-const UserLogged = ({ children }) => {
-  return children({ isAuth: false });
-};
+import Context from "../Context";
 
 export default function App() {
   return (
@@ -27,9 +25,9 @@ export default function App() {
         <Detail path="/detail/:detailId" />
       </Router>
 
-      <UserLogged>
-        {({ isAuth }) => {
-          return isAuth ? (
+      <Context.Consumer>
+        {({ isAuth, activateAuth }) =>
+          isAuth ? (
             <Router>
               <Favs path="/favs" />
               <User path="/user" />
@@ -39,9 +37,9 @@ export default function App() {
               <NotRegisterUser path="/favs" />
               <NotRegisterUser path="/user" />
             </Router>
-          );
-        }}
-      </UserLogged>
+          )
+        }
+      </Context.Consumer>
 
       <NavBar />
     </>

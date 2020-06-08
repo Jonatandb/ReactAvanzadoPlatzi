@@ -1,9 +1,16 @@
 import React from "react";
+import Context from "../../Context";
 
 export const NotRegisterUser = () => {
   return (
-    <div>
-      <h1>User not registered 💔</h1>
-    </div>
+    <Context.Consumer>
+      {({ activateAuth }) => {
+        return (
+          <form onSubmit={activateAuth}>
+            <button>Iniciar sesión</button>
+          </form>
+        );
+      }}
+    </Context.Consumer>
   );
 };
