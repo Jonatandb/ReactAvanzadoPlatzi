@@ -4,6 +4,7 @@ import useNearScreen from "../../hooks/useNearScreen";
 import useLocalStorage from "../../hooks/useLocalStorage";
 import { FavButton } from "../FavButton";
 import { ToggleLikeMutation } from "../../containers/ToggleLikeMutation";
+import { Link } from "@reach/router";
 
 const DEFAULT_IMAGE =
   "https://images.unsplash.com/photo-1553987882-91d92995e16c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60";
@@ -16,11 +17,11 @@ const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
     <Article ref={element}>
       {show && (
         <>
-          <a href={`/?detail=${id}`}>
+          <Link to={`/detail/${id}`}>
             <ImgWrapper>
               <Img src={src} />
             </ImgWrapper>
-          </a>
+          </Link>
           <ToggleLikeMutation>
             {(toggleLike) => {
               const handleFavClick = () => {
