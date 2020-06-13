@@ -1,8 +1,13 @@
 import React, { useState, useLayoutEffect } from "react";
 import { useInputValue } from "../../hooks/useInputValue";
-import { Form, Input, Button, Title } from "./styles";
+import { Form, Input, Button, Title, Error } from "./styles";
 
-export const UserForm = ({ onSubmit, title = "UserForm has no title" }) => {
+export const UserForm = ({
+  disabled,
+  error,
+  onSubmit,
+  title = "UserForm has no title",
+}) => {
   const email = useInputValue("");
   const password = useInputValue("");
 
@@ -13,12 +18,18 @@ export const UserForm = ({ onSubmit, title = "UserForm has no title" }) => {
 
   return (
     <>
-      <Title>{title}</Title>
-      <Form onSubmit={handleSubmit}>
-        <Input placeholder="Email" {...email} />
-        <Input placeholder="Password" {...password} type="password" />
-        <Button>{title}</Button>
+      <Form disabled={disabled} onSubmit={handleSubmit}>
+        <Title>{title}</Title>
+        <Input disabled={disabled} placeholder="Email" {...email} />
+        <Input
+          disabled={disabled}
+          placeholder="Password"
+          {...password}
+          type="password"
+        />
+        <Button disabled={disabled}>{title}</Button>
       </Form>
+      {error && <Error>{error}</Error>}
     </>
   );
 };
