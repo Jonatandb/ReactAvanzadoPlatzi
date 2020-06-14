@@ -23,6 +23,14 @@
 
 ## Páginas investigadas:
 
+JWT.IO
+
+- https://jwt.io/
+
+Introducción a GraphQL en español. ¿Qué es? ¿Para qué sirve? Sus ventajas. [Curso express GraphQL]
+
+- https://www.youtube.com/watch?v=KRV46iZ844s&list=PLV8x_i1fqBw3wHa7HOle0MMAcRjfViWwC
+
 "Can I use" (up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers)
 
 - https://caniuse.com/#search=intersection%20observer
