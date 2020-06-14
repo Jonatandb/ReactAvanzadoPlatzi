@@ -9,7 +9,7 @@ function useCategoriesData() {
   useEffect(() => {
     setLoading(true);
     window
-      .fetch("https://petgram-api-jonatandb.now.sh/categories")
+      .fetch("https://petgram-jdb-api.now.sh/categories")
       .then((res) => res.json())
       .then((response) => {
         setLoading(false);
@@ -17,7 +17,6 @@ function useCategoriesData() {
       })
       .catch((err) => {
         setLoading(false);
-        console.log("useCategoriesData() -> Error:", err);
       });
   }, []);
 

@@ -1,7 +1,6 @@
 const userModel = require("./models/userModel");
 const categoriesModel = require("./models/categoriesModel");
 const photosModel = require("./models/photosModel");
-const userModel = require("./models/userModel");
 const { gql } = require("apollo-server-express");
 const jsonwebtoken = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
@@ -37,7 +36,6 @@ const typeDefs = gql`
     categories: [Category]
     photos(categoryId: ID): [Photo]
     photo(id: ID!): Photo
-    users: [User]
   }
 
   input LikePhoto {
@@ -189,9 +187,6 @@ const resolvers = {
     photos(_, { categoryId }, context) {
       const favs = tryGetFavsFromUserLogged(context);
       return photosModel.list({ categoryId, favs });
-    },
-    users(_, __, context) {
-      return userModel.list();
     },
   },
 };

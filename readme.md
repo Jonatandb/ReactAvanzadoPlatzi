@@ -1,10 +1,10 @@
 ## FrontEnd Online:
 
-- [https://petgram.jonatandb.now.sh/](https://petgram.jonatandb.now.sh/)
+- [https://petgram-jdb.now.sh/](https://petgram-jdb.now.sh/)
 
 ## API Online:
 
-- [https://petgram-api-jonatandb.now.sh/](https://petgram-api-jonatandb.now.sh/)
+- [https://petgram-jdb-api.now.sh/](https://petgram-jdb-api.now.sh/)
 
 ### Deploy a Vercel del front:
 

@@ -7,7 +7,7 @@ import Context from "../Context";
 import App from "./App";
 
 const client = new ApolloClient({
-  uri: "https://petgram-api-jonatandb.now.sh/graphql",
+  uri: "https://petgram-jdb-api.now.sh/graphql",
 });
 
 ReactDOM.render(

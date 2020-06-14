@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "name": "petgram-jonatandb",
-  "alias": "petgram-jonatandb",
+  "alias": "petgram-jdb",
   "builds": [
     {
       "use": "@now/static-build",
