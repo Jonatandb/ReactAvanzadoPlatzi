@@ -26,7 +26,7 @@ export default function App() {
       </Router>
 
       <Context.Consumer>
-        {({ isAuth, activateAuth }) =>
+        {({ isAuth }) =>
           isAuth ? (
             <Router>
               <Favs path="/favs" />
