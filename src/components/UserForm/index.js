@@ -1,6 +1,7 @@
 import React, { useState, useLayoutEffect } from "react";
 import { useInputValue } from "../../hooks/useInputValue";
-import { Form, Input, Button, Title, Error } from "./styles";
+import { Form, Input, Title, Error } from "./styles";
+import { SubmitButton } from "../SubmitButton";
 
 export const UserForm = ({
   disabled,
@@ -27,7 +28,7 @@ export const UserForm = ({
           {...password}
           type="password"
         />
-        <Button disabled={disabled}>{title}</Button>
+        <SubmitButton disabled={disabled}>{title}</SubmitButton>
       </Form>
       {error && <Error>{error}</Error>}
     </>
