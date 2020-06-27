@@ -19,6 +19,19 @@
 
         npm run dev
 
+### Compilar la app con Webpack en modo development:
+
+        ./node_modules/.bin/webpack --mode=development
+        - Proporcionar el modo de configuración le dice a Webpack cual de sus optimizaciones integradas debe utilizar.
+        - Si no se especifica, Webpack usa 'production' como modo por defecto.
+        - Al ejecutar esto, se compila la app en la carpeta dist.
+        - https://webpack.js.org/configuration/mode/
+
+### Ejecución de la app compilada en modo desarrollo, servida localmente con serve:
+
+        npm run serve:dev
+        - 'serve:dev' es un script agregado a package.json.
+
 ---
 
 ## Páginas investigadas:
