@@ -8,7 +8,8 @@
 
 ### Deploy a Vercel del front:
 
-        vercel
+        vercel (deploy en modo desarrollo)
+        npm run deploy (script que deploya a vercel en modo productivo)
 
 ### Deploy a Vercel de la api:
 

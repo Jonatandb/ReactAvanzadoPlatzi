@@ -29,7 +29,7 @@ const ListOfCategoriesComponent = () => {
 
   useEffect(() => {
     const onScroll = (e) => {
-      const newShowFixed = window.scrollY > 190;
+      const newShowFixed = window.scrollY > 320;
       showFixed !== newShowFixed && setShowFixed(newShowFixed);
     };
 
