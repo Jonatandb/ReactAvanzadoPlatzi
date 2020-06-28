@@ -91,3 +91,15 @@ Babel - options
 React Lazy
 
 - https://es.reactjs.org/docs/code-splitting.html
+
+Does not provide a valid apple-touch-icon
+
+- https://web.dev/apple-touch-icon/?utm_source=lighthouse&utm_medium=devtools
+
+webpack-pwa-manifest - API
+
+- https://github.com/arthurbergmz/webpack-pwa-manifest#api
+
+vercel@19.1.1
+
+- https://github.com/vercel/vercel/releases/tag/vercel@19.1.1

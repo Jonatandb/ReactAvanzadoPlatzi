@@ -15,6 +15,10 @@ export const HomePage = ({ categoryId }) => {
         <title>{title && title} | Petgram 🐶</title>
         <meta name="description" content={subtitle} />
       </Helmet>
+      <Div>
+        {title && <h3>{title}</h3>}
+        {subtitle && <h4>{subtitle}</h4>}
+      </Div>
       <ListOfCategories />
       <Div>
         <ListOfPhotoCards categoryId={categoryId} />
