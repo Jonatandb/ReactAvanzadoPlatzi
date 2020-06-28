@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackPWAManifestPlugin = require("webpack-pwa-manifest");
+const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -33,6 +34,28 @@ module.exports = {
           src: path.resolve("src/assets/icon.png"),
           size: 1024,
           ios: "startup",
+        },
+      ],
+    }),
+    new WorkboxWebpackPlugin.GenerateSW({
+      runtimeCaching: [
+        {
+          urlPattern: new RegExp(
+            "https://(res.cloudinary.com|images.unsplash.com)"
+          ),
+          handler: "CacheFirst",
+          options: {
+            cacheName: "images",
+          },
+        },
+        {
+          urlPattern: new RegExp(
+            "https://petgram-jdb-api-cwlgmb0ki.vercel.app"
+          ),
+          handler: "NetworkFirst",
+          options: {
+            cacheName: "api",
+          },
         },
       ],
     }),
