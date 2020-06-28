@@ -79,3 +79,15 @@ How can I stop webpack dev server from windows console?
 Cambiar un mensaje de confirmación
 
 - https://help.github.com/es/github/committing-changes-to-your-project/changing-a-commit-message
+
+Webpack - 'mode'
+
+- https://webpack.js.org/configuration/mode/
+
+Babel - options
+
+- https://babeljs.io/docs/en/options
+
+React Lazy
+
+- https://es.reactjs.org/docs/code-splitting.html
