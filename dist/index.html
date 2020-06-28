@@ -15,9 +15,9 @@
         window.addEventListener("load", function () {
           navigator.serviceWorker
             .register("/service-worker.js")
-            .then((registration) => {
-              console.log("Registrado");
-            })
+            // .then((registration) => {
+            //   console.log("SerciceWorker Registrado");
+            // })
             .catch((error) => {
               console.log(error);
             });

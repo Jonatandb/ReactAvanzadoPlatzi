@@ -168,7 +168,7 @@ define("./service-worker.js",['./workbox-99319794'], function (workbox) { 'use s
     "revision": "867ef09d4fb6abd502858c6e05e11df8"
   }, {
     "url": "/index.html",
-    "revision": "3e54b97c08f117dc874870da25694865"
+    "revision": "41290060dd3f68d7248051c56e408000"
   }, {
     "url": "/manifest.88c9b402ca44e6d9d38abd277daeeb5d.json",
     "revision": "88c9b402ca44e6d9d38abd277daeeb5d"
