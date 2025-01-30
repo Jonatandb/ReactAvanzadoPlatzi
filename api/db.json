@@ -28,42 +28,42 @@
       "id": 1,
       "name": "cats",
       "emoji": "🐱",
-      "cover": "https://res.cloudinary.com/midudev/image/upload/w_150/v1555671700/category_cats.jpg",
+      "cover": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=2043&auto=format&fit=crop",
       "path": "/photos/cats"
     },
     {
       "id": 2,
       "name": "dogs",
       "emoji": "🐶",
-      "cover": "https://res.cloudinary.com/midudev/image/upload/w_150/v1555671700/category_dogs.jpg",
+      "cover": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=1974&auto=format&fit=crop",
       "path": "/photos/dogs"
     },
     {
       "id": 3,
       "name": "hamsters",
       "emoji": "🐹",
-      "cover": "https://res.cloudinary.com/midudev/image/upload/w_150/v1555671700/category_hamsters.jpg",
+      "cover": "https://plus.unsplash.com/premium_photo-1723541849330-cab9c6ed74d4?q=80&w=2012&auto=format&fit=crop",
       "path": "/photos/hamsters"
     },
     {
       "id": 4,
       "name": "rabbits",
       "emoji": "🐰",
-      "cover": "https://res.cloudinary.com/midudev/image/upload/w_150/v1555671700/category_rabbits.jpg",
+      "cover": "https://images.unsplash.com/photo-1559214369-a6b1d7919865?q=80&w=1974&auto=format&fit=crop",
       "path": "/photos/rabbits"
     },
     {
       "id": 5,
       "name": "birds",
       "emoji": "🐦",
-      "cover": "https://res.cloudinary.com/midudev/image/upload/w_150/v1555671700/category_birds.jpg",
+      "cover": "https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=1925&auto=format&fit=crop",
       "path": "/photos/birds"
     },
     {
       "id": 6,
       "name": "fishes",
       "emoji": "🐠",
-      "cover": "https://res.cloudinary.com/midudev/image/upload/w_150/v1555671700/category_fishes.jpg",
+      "cover": "https://images.unsplash.com/photo-1534043464124-3be32fe000c9?q=80&w=2012&auto=format&fit=crop",
       "path": "/photos/fishes"
     }
   ],
@@ -71,7 +71,7 @@
     {
       "id": 0,
       "categoryId": 2,
-      "src": "https://res.cloudinary.com/midudev/image/upload/w_300/q_80/v1560262103/dogs.png",
+      "src": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=1974&auto=format&fit=crop",
       "userId": 100,
       "likes": 7
     },
